@@ -55,6 +55,7 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
       - [druid](#druid)
       - [Dioxus](#dioxus)
       - [Vizia](#vizia)
+      - [slint](#slint)
     - [TUI](#tui)
       - [tui-rs](#tui-rs)
     - [CLI](#cli)
@@ -92,8 +93,9 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
       - [A-JSON](#a-json)
       - [json-rust](#json-rust)
       - [pikkr](#pikkr)
-      - [Serde JSON](#serde-json)
+      - [Serde](#serde)
       - [quick-xml](#quick-xml)
+      - [musli](#musli)
     - [配置解析](#配置解析)
       - [config-rs](#config-rs)
     - [日期处理](#日期处理)
@@ -106,6 +108,7 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
       - [jwt](#jwt)
       - [josekit](#josekit)
       - [sha](#sha)
+      - [utf8mb3](#utf8mb3)
     - [数据库](#数据库)
       - [SeaORM](#seaorm)
       - [rbatis](#rbatis)
@@ -185,6 +188,7 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
       - [sonic](#sonic)
     - [系统工具](#系统工具)
       - [RustScan](#rustscan)
+      - [sniffnet](#sniffnet)
     - [视频工具](#视频工具)
       - [biliup-rs](#biliup-rs)
   - [Community](#community)
@@ -220,6 +224,7 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
 - [Rust 笔记 一文讲透 Rust 中的 PartialEq 和 Eq (qq.com)](https://mp.weixin.qq.com/s/hdW2QjAExPs1cE9rV1tn4Q)
 - [Rust 代码执行解析的可视化过程，初学者可以通过这个更深入的了解 Rust 的所有权等特性)](https://cognitive-engineering-lab.github.io/aquascope/)
 - [用 Rust 实现一个 GUI 框架](https://samsartor.com/guis-1/)
+- [运行 1 万个并发任务需要多少内存？ (pkolaczk.github.io)](https://pkolaczk.github.io/memory-consumption-of-async/)
 
 ## Video
 
@@ -662,6 +667,16 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
 
 代码仓库：[vizia/vizia: A declarative GUI library written in Rust (github.com)](https://github.com/vizia/vizia)
 
+#### slint
+
+![stars](https://img.shields.io/github/stars/slint-ui/slint?style=flat) ![GitHub](https://img.shields.io/github/license/slint-ui/slint)
+
+> Slint 是一个为任何显示设备有效开发流体图形用户界面的工具箱：嵌入式设备和桌面应用程序。我们支持多种编程语言，如 Rust、C++和 JavaScript。
+
+代码仓库：[slint-ui/slint: Slint is a declarative GUI toolkit to build native user interfaces for applications that are written in Rust, C++, or JavaScript. (github.com)](https://github.com/slint-ui/slint)
+
+官方网站：[Slint - 快速简便的 UI 工具包 (slint-ui.com)](https://slint-ui.com/)
+
 ### TUI
 
 #### tui-rs
@@ -959,7 +974,7 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
 
 代码仓库：[pikkr/pikkr: JSON parser which picks up values directly without performing tokenization in Rust (github.com)](https://github.com/pikkr/pikkr)
 
-#### Serde JSON
+#### Serde
 
 ![stars](https://img.shields.io/github/stars/serde-rs/json?style=flat) ![GitHub](https://img.shields.io/github/license/serde-rs/json)
 
@@ -977,6 +992,20 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
 > 支持各种编码（具有编码功能）、命名空间解析、特殊字符。
 
 代码仓库：[tafia/quick-xml: Rust high performance xml reader and writer (github.com)](https://github.com/tafia/quick-xml)
+
+#### musli
+
+![stars](https://img.shields.io/github/stars/udoprog/musli?style=flat) ![GitHub](https://img.shields.io/github/license/udoprog/musli)
+
+> Müsli 是一个灵活的通用二进制序列化框架.
+>
+> 性能卓越，毫不妥协.
+>
+> Müsli 是一个灵活、快速且通用的二进制序列化框架，用于 锈，与 serde.rs 一脉相承。
+>
+> 它提供了一组格式，每种[格式](https://github.com/udoprog/musli#formats)都有其自己的良好文档 一组功能和权衡。每个面向字节的序列化方法 （包括 [`musli-json`](https://docs.rs/musli-json)）在有或没有 .` #[no_std]``alloc `
+
+代码仓库：[udoprog/musli：Müsli 是一个灵活且通用的二进制序列化框架 (github.com)](https://github.com/udoprog/musli)
 
 ### 配置解析
 
@@ -1057,6 +1086,14 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
 > Rust 安全哈希算法 (SHA) 内在库。
 
 代码仓库：[andydude/rust-sha: Rust Cryptography Intrinsics (github.com)](https://github.com/andydude/rust-sha/)
+
+#### utf8mb3
+
+![stars](https://img.shields.io/github/stars/WumaCoder/utf8mb3?style=flat) ![GitHub](https://img.shields.io/github/license/WumaCoder/utf8mb3)
+
+> 将所有 4 字节字符（如表情符号）编码为 3 字节字符，并且支持 wasm。
+
+代码仓库：[WumaCoder/utf8mb3: Let mysql's utf8 encoding store four-byte characters such as emoji(让 mysql 的 utf8 编码存储表情符号这类的四字节字符). (github.com)](https://github.com/WumaCoder/utf8mb3)
 
 ### 数据库
 
@@ -1658,6 +1695,14 @@ Rust Boom 是一个仓主在学习使用 Rust 的时候，对 Rust 的一些难�
 > 现代端口扫描程序。**快速查找端口（最快 3 秒）。**
 
 代码仓库：[RustScan/Rustscan：🤖 现代端口扫描仪 🤖 (github.com)](https://github.com/RustScan/RustScan)
+
+#### sniffnet
+
+![stars](https://img.shields.io/github/stars/GyulyVGC/sniffnet?style=flat) ![GitHub](https://img.shields.io/github/license/GyulyVGC/sniffnet)
+
+> 舒适地监控你的网络流量的应用程序。
+
+代码仓库：[GyulyVGC/sniffnet: Application to comfortably monitor your network traffic (github.com)](https://github.com/GyulyVGC/sniffnet)
 
 ### 视频工具
 
